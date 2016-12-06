@@ -1,0 +1,8 @@
+*.opensdf
+*.sdf
+*.suo
+x64/
+*.wz
+*.vc.opendb
+*.vc.db
+enc_temp_folder
