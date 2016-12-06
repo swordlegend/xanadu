@@ -26,4 +26,3 @@ in visual studio do the following:
 for testing and developing: use the start debugging button or press F5 to start and debug the server
 for other purposes: use the start without debugging button or press Strg+F5 to start the server
 Note: Windows firewall or other firewalls either need to be deactivated or when prompted at the server start, allow the server to start to listen to connections and such
-

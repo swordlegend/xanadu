@@ -49,4 +49,3 @@ all UPPER_CASE with uperscores as needed
 ----------------------------------------------------------------------------------------------------------------------
 
 for inspiration check for example the Google C++ style guide: https://google.github.io/styleguide/cppguide.html
-
