@@ -1,0 +1,52 @@
+
+C++ coding guidelines by Buya (the developer's pseudonym) version 2.0
+
+----------------------------------------------------------------------------------------------------------------------
+
+-------------- Naming --------------
+
+* file names:
+
+use .hpp for header files and .cpp for source files
+
+* function names:
+
+all lower_case with underscores as needed
+
+* constants:
+
+first letter is k followed by MixedCase
+example: kMixedCase
+applies to: constexpr, const and enum
+
+* type names:
+
+MixedCase with no underscores and a capital letter for each new word
+applies to: class, struct, typedef, enum and more
+
+* namespace names:
+
+all lowercase
+
+* macro names:
+
+all UPPER_CASE with uperscores as needed
+
+-------------- other stuff --------------
+
+* include headers in the following order:
+
+1. Related header
+2. C library
+3. C++ library
+4. other libraries' .hpp's
+5. your project's .hpp's
+
+* Comments: // or /* */
+
+* put the * and & on the right side of the variable like this: someclass *somepointer ; someclass &somereference;
+
+----------------------------------------------------------------------------------------------------------------------
+
+for inspiration check for example the Google C++ style guide: https://google.github.io/styleguide/cppguide.html
+

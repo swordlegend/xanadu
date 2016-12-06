@@ -1,0 +1,50 @@
+Beginner = 0
+
+Warrior = 100
+Fighter = 110
+Crusader = 111
+Hero = 112
+Page = 120
+White Knight = 121
+Paladin = 122
+Spearman = 130
+Dragon Knight = 131
+Dark Knight = 132
+
+Magician = 200
+Wizard (Fire/Poison) = 210
+Mage (Fire/Poison) = 211
+Arch Mage (Fire/Poison) = 212
+Wizard (Ice/Lightning) = 220
+Mage (Ice/Lightning) = 221
+Arch Mage (Ice/Lightning) = 222
+Cleric = 230
+Priest = 231
+Bishop = 232
+
+Archer = 300
+Hunter = 310
+Ranger = 311
+Bowmaster = 312
+Crossbowman = 320
+Sniper = 321
+Marksman = 322
+
+Thief = 400
+Assassin = 410
+Hermit = 411
+Night Lord = 412
+Bandit = 420
+Chief Bandit = 421
+Shadower = 422
+
+Pirate = 500                                                                                                                                                           
+Brawler = 510
+Marauder = 511
+Buccaneer = 512
+Gunslinger = 520
+Outlaw = 521
+Corsair = 522
+
+Gm = 900
+SuperGM = 910

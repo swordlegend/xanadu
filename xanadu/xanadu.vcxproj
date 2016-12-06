@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F07865A8-3A41-48D8-809C-056CC906A50B}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.51106.1</_ProjectFileVersion>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;UNICODE;_UNICODE;NTDDI_VERSION=0x06030000;_WIN32_WINNT=0x0602;WINVER=0x0602;ASIO_STANDALONE;ASIO_MSVC=_MSC_VER;POCO_NO_UNWINDOWS;POCO_STATIC</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>C:\poco-1.7.6-all\Foundation\include;C:\poco-1.7.6-all\Data\include;C:\poco-1.7.6-all\Data\MySQL\include</AdditionalIncludeDirectories>
+      <CompileAsManaged>false</CompileAsManaged>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DisableSpecificWarnings>%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libmysql.lib</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>C:\poco-1.7.6-all\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;UNICODE;_UNICODE;NTDDI_VERSION=0x06030000;_WIN32_WINNT=0x0602;WINVER=0x0602;ASIO_STANDALONE;ASIO_MSVC=_MSC_VER;POCO_NO_UNWINDOWS;POCO_STATIC</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>C:\poco-1.7.6-all\Foundation\include;C:\poco-1.7.6-all\Data\include;C:\poco-1.7.6-all\Data\MySQL\include</AdditionalIncludeDirectories>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <CompileAsManaged>false</CompileAsManaged>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DisableSpecificWarnings>%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libmysql.lib</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <AdditionalLibraryDirectories>C:\poco-1.7.6-all\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="aes\aescrypt.c" />
+    <ClCompile Include="aes\aeskey.c" />
+    <ClCompile Include="aes\aestab.c" />
+    <ClCompile Include="aes\aes_modes.c" />
+    <ClCompile Include="aes\aes_ni.c" />
+    <ClCompile Include="cash_shop_item_data_provider.cpp" />
+    <ClCompile Include="equip_data_provider.cpp" />
+    <ClCompile Include="cash_shop_package_data_provider.cpp" />
+    <ClCompile Include="cash_shop_packets.cpp" />
+    <ClCompile Include="buffvalue.cpp" />
+    <ClCompile Include="buffvalues.cpp" />
+    <ClCompile Include="hired_merchant_packets.cpp" />
+    <ClCompile Include="item_data_provider.cpp" />
+    <ClCompile Include="logger.cpp" />
+    <ClCompile Include="map_portal_data.cpp" />
+    <ClCompile Include="map_data.cpp" />
+    <ClCompile Include="map_data_provider.cpp" />
+    <ClCompile Include="mob_data_provider.cpp" />
+    <ClCompile Include="mob_drops_data_provider.cpp" />
+    <ClCompile Include="npc scripts\donator_npc.cpp" />
+    <ClCompile Include="npc scripts\el_nath_magic_spot_npc.cpp" />
+    <ClCompile Include="npc scripts\female_stylist_nimakin.cpp" />
+    <ClCompile Include="npc scripts\first_eos_rock_npc.cpp" />
+    <ClCompile Include="npc scripts\fourth_eos_rock_npc.cpp" />
+    <ClCompile Include="npc scripts\gachapon_npc_handler.cpp" />
+    <ClCompile Include="npc scripts\guild_creator_npc.cpp" />
+    <ClCompile Include="npc scripts\guild_emblem_npc.cpp" />
+    <ClCompile Include="npc scripts\handle_bowman_job_advancer.cpp" />
+    <ClCompile Include="npc scripts\handle_mage_job_advancer.cpp" />
+    <ClCompile Include="npc scripts\handle_pirate_job_advancer.cpp" />
+    <ClCompile Include="npc scripts\handle_thief_job_advancer.cpp" />
+    <ClCompile Include="npc scripts\handle_warrior_job_advancer.cpp" />
+    <ClCompile Include="npc scripts\handle_zakum_npcs.cpp" />
+    <ClCompile Include="npc scripts\horntail_entrance_npc.cpp" />
+    <ClCompile Include="npc scripts\jeff_elnath_npc.cpp" />
+    <ClCompile Include="npc scripts\male_stylist_kin.cpp" />
+    <ClCompile Include="npc scripts\maple_leaf_exchanger_npc.cpp" />
+    <ClCompile Include="npc scripts\npcs_pq_carnival.cpp" />
+    <ClCompile Include="npc scripts\npcs_pq_henesys.cpp" />
+    <ClCompile Include="npc scripts\npcs_pq_kerning.cpp" />
+    <ClCompile Include="npc scripts\npcs_pq_ludibrium.cpp" />
+    <ClCompile Include="npc scripts\npcs_pq_ludi_maze.cpp" />
+    <ClCompile Include="npc scripts\npcs_pq_orbis.cpp" />
+    <ClCompile Include="npc scripts\npcs_pq_pirate.cpp" />
+    <ClCompile Include="npc scripts\npcs_ship_plane_subway.cpp" />
+    <ClCompile Include="npc scripts\orbis_magic_spot_npc.cpp" />
+    <ClCompile Include="npc scripts\papulatus_npc.cpp" />
+    <ClCompile Include="npc scripts\regular_cab_npc.cpp" />
+    <ClCompile Include="npc scripts\second_eos_rock_npc.cpp" />
+    <ClCompile Include="npc scripts\taxi_npc_nlc.cpp" />
+    <ClCompile Include="npc scripts\third_eos_rock_npc.cpp" />
+    <ClCompile Include="packetcreator.cpp" />
+    <ClCompile Include="pet_data.cpp" />
+    <ClCompile Include="pet_data_provider.cpp" />
+    <ClCompile Include="player_trade.cpp" />
+    <ClCompile Include="buddy.cpp" />
+    <ClCompile Include="buddy_packets.cpp" />
+    <ClCompile Include="buff_packets.cpp" />
+    <ClCompile Include="cashshop_handler.cpp" />
+    <ClCompile Include="channel.cpp" />
+    <ClCompile Include="character.cpp" />
+    <ClCompile Include="chat_packets.cpp" />
+    <ClCompile Include="crypto.cpp" />
+    <ClCompile Include="drop_handler.cpp" />
+    <ClCompile Include="drop_packets.cpp" />
+    <ClCompile Include="fame_handler.cpp" />
+    <ClCompile Include="guild_member.cpp" />
+    <ClCompile Include="guild_packets.cpp" />
+    <ClCompile Include="hiredmerchant.cpp" />
+    <ClCompile Include="hiredmerchant_item.cpp" />
+    <ClCompile Include="inventory_packets.cpp" />
+    <ClCompile Include="item.cpp" />
+    <ClCompile Include="login_handler.cpp" />
+    <ClCompile Include="login_packets.cpp" />
+    <ClCompile Include="mapnpc.cpp" />
+    <ClCompile Include="messenger_packet.cpp" />
+    <ClCompile Include="mob_packets.cpp" />
+    <ClCompile Include="npc_packets.cpp" />
+    <ClCompile Include="other_packets.cpp" />
+    <ClCompile Include="party_member.cpp" />
+    <ClCompile Include="party_packets.cpp" />
+    <ClCompile Include="pet_handler.cpp" />
+    <ClCompile Include="pet_packets.cpp" />
+    <ClCompile Include="player_attack_handler.cpp" />
+    <ClCompile Include="playerbuddylist.cpp" />
+    <ClCompile Include="playerbuffs.cpp" />
+    <ClCompile Include="player_interaction_handler.cpp" />
+    <ClCompile Include="playernpc.cpp" />
+    <ClCompile Include="playerquests.cpp" />
+    <ClCompile Include="playersummons.cpp" />
+    <ClCompile Include="portal_script_handler.cpp" />
+    <ClCompile Include="quest.cpp" />
+    <ClCompile Include="quest_data.cpp" />
+    <ClCompile Include="quest_data_provider.cpp" />
+    <ClCompile Include="reactor_handler.cpp" />
+    <ClCompile Include="reactor_packets.cpp" />
+    <ClCompile Include="shop_data.cpp" />
+    <ClCompile Include="shop_data_provider.cpp" />
+    <ClCompile Include="skill_data.cpp" />
+    <ClCompile Include="skill_data_provider.cpp" />
+    <ClCompile Include="skill_packets.cpp" />
+    <ClCompile Include="stats_handler.cpp" />
+    <ClCompile Include="storage_handler.cpp" />
+    <ClCompile Include="summon.cpp" />
+    <ClCompile Include="summon_handler.cpp" />
+    <ClCompile Include="summon_packets.cpp" />
+    <ClCompile Include="timer.cpp" />
+    <ClCompile Include="trade_packets.cpp" />
+    <ClCompile Include="session.cpp" />
+    <ClCompile Include="wzcrypto.cpp" />
+    <ClCompile Include="wzfile.cpp" />
+    <ClCompile Include="wzimg.cpp" />
+    <ClCompile Include="wzmain.cpp" />
+    <ClCompile Include="wznode.cpp" />
+    <ClCompile Include="xanadu.cpp" />
+    <ClCompile Include="guild.cpp" />
+    <ClCompile Include="messenger.cpp" />
+    <ClCompile Include="party.cpp" />
+    <ClCompile Include="tools.cpp" />
+    <ClCompile Include="valid_char_data_provider.cpp" />
+    <ClCompile Include="world.cpp" />
+    <ClCompile Include="chat_handler.cpp" />
+    <ClCompile Include="guild_handler.cpp" />
+    <ClCompile Include="inventory_handler.cpp" />
+    <ClCompile Include="messenger_handler.cpp" />
+    <ClCompile Include="mob_handler.cpp" />
+    <ClCompile Include="npc_handler.cpp" />
+    <ClCompile Include="party_handler.cpp" />
+    <ClCompile Include="player_handler.cpp" />
+    <ClCompile Include="skills_handler.cpp" />
+    <ClCompile Include="drop.cpp" />
+    <ClCompile Include="effect.cpp" />
+    <ClCompile Include="inventory.cpp" />
+    <ClCompile Include="map.cpp" />
+    <ClCompile Include="mob.cpp" />
+    <ClCompile Include="player_movement_handler.cpp" />
+    <ClCompile Include="player.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aes\aes.h" />
+    <ClInclude Include="aes\aesopt.h" />
+    <ClInclude Include="aes\aestab.h" />
+    <ClInclude Include="aes\aes_ni.h" />
+    <ClInclude Include="aes\brg_endian.h" />
+    <ClInclude Include="aes\brg_types.h" />
+    <ClInclude Include="buddylist_constants.hpp" />
+    <ClInclude Include="buffstat_constants.hpp" />
+    <ClInclude Include="cashshop_constants.hpp" />
+    <ClInclude Include="cash_item_data.hpp" />
+    <ClInclude Include="cash_shop_item_data_provider.hpp" />
+    <ClInclude Include="cash_shop_package_data_provider.hpp" />
+    <ClInclude Include="crypto_constants.hpp" />
+    <ClInclude Include="drop_constants.hpp" />
+    <ClInclude Include="equip_data_provider.hpp" />
+    <ClInclude Include="game_constants.hpp" />
+    <ClInclude Include="item_data_provider.hpp" />
+    <ClInclude Include="attackinfo.hpp" />
+    <ClInclude Include="buddy.hpp" />
+    <ClInclude Include="buffvalue.hpp" />
+    <ClInclude Include="buffvalues.hpp" />
+    <ClInclude Include="channel.hpp" />
+    <ClInclude Include="character.hpp" />
+    <ClInclude Include="crypto.hpp" />
+    <ClInclude Include="drop.hpp" />
+    <ClInclude Include="drop_data.hpp" />
+    <ClInclude Include="effect.hpp" />
+    <ClInclude Include="equip_data.hpp" />
+    <ClInclude Include="guild.hpp" />
+    <ClInclude Include="guild_member.hpp" />
+    <ClInclude Include="hiredmerchant.hpp" />
+    <ClInclude Include="hiredmerchant_item.hpp" />
+    <ClInclude Include="inventory.hpp" />
+    <ClInclude Include="item.hpp" />
+    <ClInclude Include="item_data.hpp" />
+    <ClInclude Include="job_constants.hpp" />
+    <ClInclude Include="key.hpp" />
+    <ClInclude Include="logger.hpp" />
+    <ClInclude Include="map.hpp" />
+    <ClInclude Include="map_foothold_data.hpp" />
+    <ClInclude Include="map_mob_data.hpp" />
+    <ClInclude Include="map_portal_data.hpp" />
+    <ClInclude Include="map_reactor_data.hpp" />
+    <ClInclude Include="map_data.hpp" />
+    <ClInclude Include="map_data_provider.hpp" />
+    <ClInclude Include="messenger.hpp" />
+    <ClInclude Include="messenger_constants.hpp" />
+    <ClInclude Include="mob.hpp" />
+    <ClInclude Include="mob_constants.hpp" />
+    <ClInclude Include="mob_data.hpp" />
+    <ClInclude Include="mapnpc.hpp" />
+    <ClInclude Include="mob_data_provider.hpp" />
+    <ClInclude Include="mob_drops_data_provider.hpp" />
+    <ClInclude Include="packetcreator.hpp" />
+    <ClInclude Include="packet_constants.hpp" />
+    <ClInclude Include="party.hpp" />
+    <ClInclude Include="party_member.hpp" />
+    <ClInclude Include="party_constants.hpp" />
+    <ClInclude Include="pet_command_data.hpp" />
+    <ClInclude Include="pet_data.hpp" />
+    <ClInclude Include="pet_data_provider.hpp" />
+    <ClInclude Include="player.hpp" />
+    <ClInclude Include="playernpc.hpp" />
+    <ClInclude Include="quest_data_provider.hpp" />
+    <ClInclude Include="shop_data_provider.hpp" />
+    <ClInclude Include="skill.hpp" />
+    <ClInclude Include="skill_data.hpp" />
+    <ClInclude Include="skill_data_provider.hpp" />
+    <ClInclude Include="timer.hpp" />
+    <ClInclude Include="quest.hpp" />
+    <ClInclude Include="quest_data.hpp" />
+    <ClInclude Include="quest_reward_data.hpp" />
+    <ClInclude Include="receive_packet_opcodes.hpp" />
+    <ClInclude Include="send_packet_opcodes.hpp" />
+    <ClInclude Include="constants.hpp" />
+    <ClInclude Include="session.hpp" />
+    <ClInclude Include="shop_data.hpp" />
+    <ClInclude Include="shop_item_data.hpp" />
+    <ClInclude Include="skill_level_data.hpp" />
+    <ClInclude Include="summon.hpp" />
+    <ClInclude Include="timer_id.hpp" />
+    <ClInclude Include="tools.hpp" />
+    <ClInclude Include="valid_char_data_provider.hpp" />
+    <ClInclude Include="world.hpp" />
+    <ClInclude Include="wzcrypto.hpp" />
+    <ClInclude Include="wzdata.hpp" />
+    <ClInclude Include="wzdata_constants.hpp" />
+    <ClInclude Include="wzfile.hpp" />
+    <ClInclude Include="wzimg.hpp" />
+    <ClInclude Include="wzmain.hpp" />
+    <ClInclude Include="wznode.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+  </ProjectExtensions>
+</Project>

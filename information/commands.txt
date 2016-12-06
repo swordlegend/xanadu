@@ -1,0 +1,53 @@
+               GM Commands
+
+!warp [mapid]               Warps you to <map>
+!warpto [playername]        Warps you to <player>
+!warphere [playername]        Warps <player> to you
+!pos		            Shows you the x, y and foothold coordinates, the foothold fh and the map id you are in
+!maxskills                              Gives all 4th job skills
+!gmshop [number]            Opens one gmshop (1 - 8)
+!item [itemid] [amount]	    Gives you the item [itemid] and the [amount]
+!mesos [amount]		    Sets your mesos to [amount]
+!fame [amount]              Sets your fame to [amount]
+!level [amount]		    Sets your level to [amount]
+!levelup		    Sets your 1 level up and gives +5 AP and +3 SP
+!job [jobid] 		    Sets your job to [jobid]
+!sp [amount]		    Sets your sp to [amount]
+!ap [amount]		    Sets your ap to [amount]
+!str [amount]	            Sets your str to [amount]
+!dex [amount]               Sets your dex to [amount]
+!int [amount]	            Sets your int to [amount]
+!luk [amount]	            Sets your luk to [amount]
+!hp			    Sets your max hp to [hp]
+!mp			    Sets your max mp to [mp]
+!heal			    Heals you
+!spawn  [mobid]		    It spawns the [mobid]
+!header [text]		    It changes the header text to [text]
+!say [text]		    Says Playername: [text] to all players
+!notice [text]		   Says [Notice][text] to all players
+!notice2 [text]		                    Sends a "box" to all players with a message
+!hide
+!unhide
+!meeting                                Warps to GM Map
+!online 										Shows online players with name, channel and location (needs to be updated)
+!shutdown
+!dc [player name]                       		Disconnects [player]
+!ban                                    		Bans [player]
+!unban                                  		Unbans [player]
+!donationpoints [amount] [username]     		Gives [username] donation points as much as [amount]
+!nxcash [amount] [username]             		Gives [username] NX cash as much as [amount] | Needs to be implemented
+!giveitem [itemid] [quantity] [charactername] 	Gives [charactername] as much [itemid] as [quantity] | Needs to be implemented
+!givemesos [amount] [username]					Gives [charactername] as much mesos as [amount] | Needs to be implemented
+
+
+
+               Player Commands
+			   
+
+@gm {message}    Contact the staff, a message can be added; it's sent to all online staff members
+@pq              Opens the warper npc that warps to PQs
+@check           Displays donor points and NX Cash.
+@str [amount]    Adds str.
+@dex [amount]    Adds dex.
+@int [amount]    Adds int.
+@luk [amount]    Adds luk.

@@ -1,0 +1,29 @@
+
+pre-requirement: Windows 7 or newer, in 64 bit, the source creator currently uses Windows 8.1 64 bit
+
+required programs, these need to be installed/put in place:
+
+* mysql server, version 5.7.x, 64 bit
+* mysql workbench, version 6.3.x, 64 bit
+* visual studio 2015 (community edition or other), update 3 for it is recommended
+* the target maplestory version (atleast the .wz files are needed;
+the default game path in the source is: "C:\\Nexon\\MapleStory v0.62\\" (it's changeable in game_constants.hpp))
+
+how to set up the source:
+
+* execute the sql files using mysql workbench
+
+* setup and compile the poco library (or have the already compiled .lib files ready)
+1. download poco C++ libraries Complete Edition 1.7.6
+2. extract it to C:\\
+3. in the Foundation folder, open Foundation_x64_vs140.sln, set the mode to debug_static_md and compile, then set the mode to release_static_md and compile
+4. in the Data folder, open Data_x64_vs140.sln, set the mode to debug_static_md and compile, then set the mode to release_static_md and compile
+5. in the Data\\MySQL folder, open MySQL_x64_vs140.sln, set the mode to debug_static_md and compile, then set the mode to release_static_md and compile
+important Note: when getting compilation errors related to mysql.h file, abort compilation and replace <mysql.h> where the error is with C:\Program Files\MySQL\MySQL Server 5.7\include and compile again/re-compile it
+
+* open xanadu.sln and compile the source (for testing and developing: in Debug mode, for other purposes: in Release mode)
+in visual studio do the following:
+for testing and developing: use the start debugging button or press F5 to start and debug the server
+for other purposes: use the start without debugging button or press Strg+F5 to start the server
+Note: Windows firewall or other firewalls either need to be deactivated or when prompted at the server start, allow the server to start to listen to connections and such
+

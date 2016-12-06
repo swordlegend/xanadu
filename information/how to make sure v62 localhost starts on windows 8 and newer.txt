@@ -1,0 +1,10 @@
+
+have any program windows open
+
+and maybe check the run as admin box
+
+and maybe set compability mode to windows 7 or so
+
+NOTE: use ALT+F12 to make FPS on screen go away
+
+NOTE: apparently when skype runs in background or on screen and chrome is half-open on screen, chances are better for it to launch (no clue why that is the case)

@@ -1,0 +1,730 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="connection_handling">
+      <UniqueIdentifier>{340a0eac-b373-49c5-adc5-b006ef7960ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="constants">
+      <UniqueIdentifier>{4edc2c2e-4d2c-4973-9f99-f8b1ab01e06f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="crypto">
+      <UniqueIdentifier>{f4d7b5fa-70f6-4c5c-a24d-c6b9959da439}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="database">
+      <UniqueIdentifier>{8908fb6d-92e7-4a74-890b-459952788f1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_server">
+      <UniqueIdentifier>{cdc8d995-fec5-47ec-afa6-f2d849c63142}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="receive_packet_handler">
+      <UniqueIdentifier>{0afa296c-a813-4d75-92c8-f693e3f5b659}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="send_packet_creator">
+      <UniqueIdentifier>{6865c762-8de3-4b98-9f6d-da49940d97bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utilities">
+      <UniqueIdentifier>{b02c8587-c4d1-4253-8510-5b3131a9f263}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="timer">
+      <UniqueIdentifier>{6e55be4a-e883-4ff7-88f0-cd128a564dd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="world_server">
+      <UniqueIdentifier>{10ae7d1a-f9b1-4dff-a172-c4b7b87cb9a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="aes">
+      <UniqueIdentifier>{fcfb763d-e09c-4598-9059-2cb2f0d3a9b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="npc scripts">
+      <UniqueIdentifier>{55a4a366-2974-46ce-a61e-8584e0f80a93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wz_reader">
+      <UniqueIdentifier>{26189180-c8ce-486b-b1b2-4e8fda9f4927}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="session.cpp">
+      <Filter>connection_handling</Filter>
+    </ClCompile>
+    <ClCompile Include="valid_char_data_provider.cpp">
+      <Filter>database</Filter>
+    </ClCompile>
+    <ClCompile Include="guild.cpp">
+      <Filter>world_server</Filter>
+    </ClCompile>
+    <ClCompile Include="guild_member.cpp">
+      <Filter>world_server</Filter>
+    </ClCompile>
+    <ClCompile Include="messenger.cpp">
+      <Filter>world_server</Filter>
+    </ClCompile>
+    <ClCompile Include="party.cpp">
+      <Filter>world_server</Filter>
+    </ClCompile>
+    <ClCompile Include="party_member.cpp">
+      <Filter>world_server</Filter>
+    </ClCompile>
+    <ClCompile Include="world.cpp">
+      <Filter>world_server</Filter>
+    </ClCompile>
+    <ClCompile Include="summon_handler.cpp">
+      <Filter>receive_packet_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="stats_handler.cpp">
+      <Filter>receive_packet_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="skills_handler.cpp">
+      <Filter>receive_packet_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="player_handler.cpp">
+      <Filter>receive_packet_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="player_attack_handler.cpp">
+      <Filter>receive_packet_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="player_interaction_handler.cpp">
+      <Filter>receive_packet_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="cashshop_handler.cpp">
+      <Filter>receive_packet_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="inventory_handler.cpp">
+      <Filter>receive_packet_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="fame_handler.cpp">
+      <Filter>receive_packet_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="drop_handler.cpp">
+      <Filter>receive_packet_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="chat_handler.cpp">
+      <Filter>receive_packet_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="login_handler.cpp">
+      <Filter>receive_packet_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="mob_handler.cpp">
+      <Filter>receive_packet_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="player_movement_handler.cpp">
+      <Filter>receive_packet_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="npc_handler.cpp">
+      <Filter>receive_packet_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="pet_handler.cpp">
+      <Filter>receive_packet_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="buddy.cpp">
+      <Filter>game_server</Filter>
+    </ClCompile>
+    <ClCompile Include="channel.cpp">
+      <Filter>game_server</Filter>
+    </ClCompile>
+    <ClCompile Include="character.cpp">
+      <Filter>game_server</Filter>
+    </ClCompile>
+    <ClCompile Include="drop.cpp">
+      <Filter>game_server</Filter>
+    </ClCompile>
+    <ClCompile Include="effect.cpp">
+      <Filter>game_server</Filter>
+    </ClCompile>
+    <ClCompile Include="hiredmerchant.cpp">
+      <Filter>game_server</Filter>
+    </ClCompile>
+    <ClCompile Include="hiredmerchant_item.cpp">
+      <Filter>game_server</Filter>
+    </ClCompile>
+    <ClCompile Include="inventory.cpp">
+      <Filter>game_server</Filter>
+    </ClCompile>
+    <ClCompile Include="item.cpp">
+      <Filter>game_server</Filter>
+    </ClCompile>
+    <ClCompile Include="map.cpp">
+      <Filter>game_server</Filter>
+    </ClCompile>
+    <ClCompile Include="mapnpc.cpp">
+      <Filter>game_server</Filter>
+    </ClCompile>
+    <ClCompile Include="mob.cpp">
+      <Filter>game_server</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>game_server</Filter>
+    </ClCompile>
+    <ClCompile Include="playerbuddylist.cpp">
+      <Filter>game_server</Filter>
+    </ClCompile>
+    <ClCompile Include="playerbuffs.cpp">
+      <Filter>game_server</Filter>
+    </ClCompile>
+    <ClCompile Include="playernpc.cpp">
+      <Filter>game_server</Filter>
+    </ClCompile>
+    <ClCompile Include="playerquests.cpp">
+      <Filter>game_server</Filter>
+    </ClCompile>
+    <ClCompile Include="summon.cpp">
+      <Filter>game_server</Filter>
+    </ClCompile>
+    <ClCompile Include="playersummons.cpp">
+      <Filter>game_server</Filter>
+    </ClCompile>
+    <ClCompile Include="quest.cpp">
+      <Filter>game_server</Filter>
+    </ClCompile>
+    <ClCompile Include="buddy_packets.cpp">
+      <Filter>send_packet_creator</Filter>
+    </ClCompile>
+    <ClCompile Include="trade_packets.cpp">
+      <Filter>send_packet_creator</Filter>
+    </ClCompile>
+    <ClCompile Include="summon_packets.cpp">
+      <Filter>send_packet_creator</Filter>
+    </ClCompile>
+    <ClCompile Include="reactor_packets.cpp">
+      <Filter>send_packet_creator</Filter>
+    </ClCompile>
+    <ClCompile Include="skill_packets.cpp">
+      <Filter>send_packet_creator</Filter>
+    </ClCompile>
+    <ClCompile Include="mob_packets.cpp">
+      <Filter>send_packet_creator</Filter>
+    </ClCompile>
+    <ClCompile Include="login_packets.cpp">
+      <Filter>send_packet_creator</Filter>
+    </ClCompile>
+    <ClCompile Include="inventory_packets.cpp">
+      <Filter>send_packet_creator</Filter>
+    </ClCompile>
+    <ClCompile Include="npc_packets.cpp">
+      <Filter>send_packet_creator</Filter>
+    </ClCompile>
+    <ClCompile Include="buff_packets.cpp">
+      <Filter>send_packet_creator</Filter>
+    </ClCompile>
+    <ClCompile Include="chat_packets.cpp">
+      <Filter>send_packet_creator</Filter>
+    </ClCompile>
+    <ClCompile Include="drop_packets.cpp">
+      <Filter>send_packet_creator</Filter>
+    </ClCompile>
+    <ClCompile Include="pet_packets.cpp">
+      <Filter>send_packet_creator</Filter>
+    </ClCompile>
+    <ClCompile Include="buffvalue.cpp">
+      <Filter>game_server</Filter>
+    </ClCompile>
+    <ClCompile Include="buffvalues.cpp">
+      <Filter>game_server</Filter>
+    </ClCompile>
+    <ClCompile Include="packetcreator.cpp">
+      <Filter>send_packet_creator</Filter>
+    </ClCompile>
+    <ClCompile Include="timer.cpp">
+      <Filter>timer</Filter>
+    </ClCompile>
+    <ClCompile Include="player_trade.cpp">
+      <Filter>game_server</Filter>
+    </ClCompile>
+    <ClCompile Include="messenger_packet.cpp">
+      <Filter>send_packet_creator</Filter>
+    </ClCompile>
+    <ClCompile Include="guild_handler.cpp">
+      <Filter>receive_packet_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="messenger_handler.cpp">
+      <Filter>receive_packet_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="party_handler.cpp">
+      <Filter>receive_packet_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="storage_handler.cpp">
+      <Filter>receive_packet_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="mob_data_provider.cpp">
+      <Filter>database</Filter>
+    </ClCompile>
+    <ClCompile Include="xanadu.cpp" />
+    <ClCompile Include="cash_shop_packets.cpp">
+      <Filter>send_packet_creator</Filter>
+    </ClCompile>
+    <ClCompile Include="portal_script_handler.cpp">
+      <Filter>receive_packet_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="cash_shop_package_data_provider.cpp">
+      <Filter>database</Filter>
+    </ClCompile>
+    <ClCompile Include="hired_merchant_packets.cpp">
+      <Filter>send_packet_creator</Filter>
+    </ClCompile>
+    <ClCompile Include="aes\aes_modes.c">
+      <Filter>aes</Filter>
+    </ClCompile>
+    <ClCompile Include="aes\aes_ni.c">
+      <Filter>aes</Filter>
+    </ClCompile>
+    <ClCompile Include="aes\aescrypt.c">
+      <Filter>aes</Filter>
+    </ClCompile>
+    <ClCompile Include="aes\aeskey.c">
+      <Filter>aes</Filter>
+    </ClCompile>
+    <ClCompile Include="aes\aestab.c">
+      <Filter>aes</Filter>
+    </ClCompile>
+    <ClCompile Include="cash_shop_item_data_provider.cpp">
+      <Filter>database</Filter>
+    </ClCompile>
+    <ClCompile Include="shop_data_provider.cpp">
+      <Filter>database</Filter>
+    </ClCompile>
+    <ClCompile Include="mob_drops_data_provider.cpp">
+      <Filter>database</Filter>
+    </ClCompile>
+    <ClCompile Include="pet_data_provider.cpp">
+      <Filter>database</Filter>
+    </ClCompile>
+    <ClCompile Include="skill_data_provider.cpp">
+      <Filter>database</Filter>
+    </ClCompile>
+    <ClCompile Include="quest_data_provider.cpp">
+      <Filter>database</Filter>
+    </ClCompile>
+    <ClCompile Include="equip_data_provider.cpp">
+      <Filter>database</Filter>
+    </ClCompile>
+    <ClCompile Include="item_data_provider.cpp">
+      <Filter>database</Filter>
+    </ClCompile>
+    <ClCompile Include="reactor_handler.cpp">
+      <Filter>receive_packet_handler</Filter>
+    </ClCompile>
+    <ClCompile Include="map_data_provider.cpp">
+      <Filter>database</Filter>
+    </ClCompile>
+    <ClCompile Include="other_packets.cpp">
+      <Filter>send_packet_creator</Filter>
+    </ClCompile>
+    <ClCompile Include="guild_packets.cpp">
+      <Filter>send_packet_creator</Filter>
+    </ClCompile>
+    <ClCompile Include="party_packets.cpp">
+      <Filter>send_packet_creator</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\donator_npc.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\el_nath_magic_spot_npc.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\female_stylist_nimakin.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\first_eos_rock_npc.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\fourth_eos_rock_npc.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\gachapon_npc_handler.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\guild_creator_npc.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\guild_emblem_npc.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\handle_bowman_job_advancer.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\handle_mage_job_advancer.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\handle_pirate_job_advancer.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\handle_thief_job_advancer.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\handle_warrior_job_advancer.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\handle_zakum_npcs.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\horntail_entrance_npc.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\jeff_elnath_npc.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\male_stylist_kin.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\maple_leaf_exchanger_npc.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\npcs_pq_carnival.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\npcs_pq_henesys.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\npcs_pq_kerning.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\npcs_pq_ludi_maze.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\npcs_pq_ludibrium.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\npcs_pq_orbis.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\npcs_pq_pirate.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\npcs_ship_plane_subway.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\orbis_magic_spot_npc.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\papulatus_npc.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\regular_cab_npc.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\second_eos_rock_npc.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\taxi_npc_nlc.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="npc scripts\third_eos_rock_npc.cpp">
+      <Filter>npc scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="wzfile.cpp">
+      <Filter>wz_reader</Filter>
+    </ClCompile>
+    <ClCompile Include="wzimg.cpp">
+      <Filter>wz_reader</Filter>
+    </ClCompile>
+    <ClCompile Include="wzmain.cpp">
+      <Filter>wz_reader</Filter>
+    </ClCompile>
+    <ClCompile Include="wznode.cpp">
+      <Filter>wz_reader</Filter>
+    </ClCompile>
+    <ClCompile Include="tools.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="wzcrypto.cpp">
+      <Filter>wz_reader</Filter>
+    </ClCompile>
+    <ClCompile Include="map_data.cpp">
+      <Filter>database</Filter>
+    </ClCompile>
+    <ClCompile Include="skill_data.cpp">
+      <Filter>database</Filter>
+    </ClCompile>
+    <ClCompile Include="map_portal_data.cpp">
+      <Filter>database</Filter>
+    </ClCompile>
+    <ClCompile Include="quest_data.cpp">
+      <Filter>database</Filter>
+    </ClCompile>
+    <ClCompile Include="pet_data.cpp">
+      <Filter>database</Filter>
+    </ClCompile>
+    <ClCompile Include="shop_data.cpp">
+      <Filter>database</Filter>
+    </ClCompile>
+    <ClCompile Include="logger.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aes\aes.h">
+      <Filter>aes</Filter>
+    </ClInclude>
+    <ClInclude Include="aes\aes_ni.h">
+      <Filter>aes</Filter>
+    </ClInclude>
+    <ClInclude Include="aes\aesopt.h">
+      <Filter>aes</Filter>
+    </ClInclude>
+    <ClInclude Include="aes\aestab.h">
+      <Filter>aes</Filter>
+    </ClInclude>
+    <ClInclude Include="aes\brg_types.h">
+      <Filter>aes</Filter>
+    </ClInclude>
+    <ClInclude Include="aes\brg_endian.h">
+      <Filter>aes</Filter>
+    </ClInclude>
+    <ClInclude Include="world.hpp">
+      <Filter>world_server</Filter>
+    </ClInclude>
+    <ClInclude Include="constants.hpp">
+      <Filter>constants</Filter>
+    </ClInclude>
+    <ClInclude Include="wzdata_constants.hpp">
+      <Filter>wz_reader</Filter>
+    </ClInclude>
+    <ClInclude Include="session.hpp">
+      <Filter>connection_handling</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto.hpp">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="map_data.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="map_data_provider.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="receive_packet_opcodes.hpp">
+      <Filter>constants</Filter>
+    </ClInclude>
+    <ClInclude Include="send_packet_opcodes.hpp">
+      <Filter>constants</Filter>
+    </ClInclude>
+    <ClInclude Include="timer.hpp">
+      <Filter>timer</Filter>
+    </ClInclude>
+    <ClInclude Include="wzcrypto.hpp">
+      <Filter>wz_reader</Filter>
+    </ClInclude>
+    <ClInclude Include="wzdata.hpp">
+      <Filter>wz_reader</Filter>
+    </ClInclude>
+    <ClInclude Include="wzmain.hpp">
+      <Filter>wz_reader</Filter>
+    </ClInclude>
+    <ClInclude Include="wzfile.hpp">
+      <Filter>wz_reader</Filter>
+    </ClInclude>
+    <ClInclude Include="wzimg.hpp">
+      <Filter>wz_reader</Filter>
+    </ClInclude>
+    <ClInclude Include="wznode.hpp">
+      <Filter>wz_reader</Filter>
+    </ClInclude>
+    <ClInclude Include="guild.hpp">
+      <Filter>world_server</Filter>
+    </ClInclude>
+    <ClInclude Include="guild_member.hpp">
+      <Filter>world_server</Filter>
+    </ClInclude>
+    <ClInclude Include="messenger.hpp">
+      <Filter>world_server</Filter>
+    </ClInclude>
+    <ClInclude Include="party.hpp">
+      <Filter>world_server</Filter>
+    </ClInclude>
+    <ClInclude Include="party_member.hpp">
+      <Filter>world_server</Filter>
+    </ClInclude>
+    <ClInclude Include="tools.hpp">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="packetcreator.hpp">
+      <Filter>send_packet_creator</Filter>
+    </ClInclude>
+    <ClInclude Include="skill.hpp">
+      <Filter>game_server</Filter>
+    </ClInclude>
+    <ClInclude Include="quest.hpp">
+      <Filter>game_server</Filter>
+    </ClInclude>
+    <ClInclude Include="summon.hpp">
+      <Filter>game_server</Filter>
+    </ClInclude>
+    <ClInclude Include="key.hpp">
+      <Filter>game_server</Filter>
+    </ClInclude>
+    <ClInclude Include="attackinfo.hpp">
+      <Filter>game_server</Filter>
+    </ClInclude>
+    <ClInclude Include="buddy.hpp">
+      <Filter>game_server</Filter>
+    </ClInclude>
+    <ClInclude Include="buffvalue.hpp">
+      <Filter>game_server</Filter>
+    </ClInclude>
+    <ClInclude Include="buffvalues.hpp">
+      <Filter>game_server</Filter>
+    </ClInclude>
+    <ClInclude Include="channel.hpp">
+      <Filter>game_server</Filter>
+    </ClInclude>
+    <ClInclude Include="effect.hpp">
+      <Filter>game_server</Filter>
+    </ClInclude>
+    <ClInclude Include="hiredmerchant_item.hpp">
+      <Filter>game_server</Filter>
+    </ClInclude>
+    <ClInclude Include="hiredmerchant.hpp">
+      <Filter>game_server</Filter>
+    </ClInclude>
+    <ClInclude Include="drop.hpp">
+      <Filter>game_server</Filter>
+    </ClInclude>
+    <ClInclude Include="character.hpp">
+      <Filter>game_server</Filter>
+    </ClInclude>
+    <ClInclude Include="mapnpc.hpp">
+      <Filter>game_server</Filter>
+    </ClInclude>
+    <ClInclude Include="playernpc.hpp">
+      <Filter>game_server</Filter>
+    </ClInclude>
+    <ClInclude Include="inventory.hpp">
+      <Filter>game_server</Filter>
+    </ClInclude>
+    <ClInclude Include="item.hpp">
+      <Filter>game_server</Filter>
+    </ClInclude>
+    <ClInclude Include="mob.hpp">
+      <Filter>game_server</Filter>
+    </ClInclude>
+    <ClInclude Include="map.hpp">
+      <Filter>game_server</Filter>
+    </ClInclude>
+    <ClInclude Include="player.hpp">
+      <Filter>game_server</Filter>
+    </ClInclude>
+    <ClInclude Include="cash_item_data.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="cash_shop_item_data_provider.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="cash_shop_package_data_provider.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="equip_data_provider.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="item_data.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="item_data_provider.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="mob_data_provider.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="mob_drops_data_provider.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="pet_data_provider.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="quest_data_provider.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="shop_data_provider.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="skill_data_provider.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="valid_char_data_provider.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="skill_data.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="skill_level_data.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="mob_data.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="equip_data.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="drop_data.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="shop_data.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="shop_item_data.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="pet_command_data.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="pet_data.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="quest_data.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="quest_reward_data.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="map_foothold_data.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="map_reactor_data.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="map_mob_data.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="map_portal_data.hpp">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="buffstat_constants.hpp">
+      <Filter>constants</Filter>
+    </ClInclude>
+    <ClInclude Include="packet_constants.hpp">
+      <Filter>constants</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto_constants.hpp">
+      <Filter>constants</Filter>
+    </ClInclude>
+    <ClInclude Include="buddylist_constants.hpp">
+      <Filter>constants</Filter>
+    </ClInclude>
+    <ClInclude Include="job_constants.hpp">
+      <Filter>constants</Filter>
+    </ClInclude>
+    <ClInclude Include="mob_constants.hpp">
+      <Filter>constants</Filter>
+    </ClInclude>
+    <ClInclude Include="drop_constants.hpp">
+      <Filter>constants</Filter>
+    </ClInclude>
+    <ClInclude Include="timer_id.hpp">
+      <Filter>timer</Filter>
+    </ClInclude>
+    <ClInclude Include="logger.hpp">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="party_constants.hpp">
+      <Filter>constants</Filter>
+    </ClInclude>
+    <ClInclude Include="cashshop_constants.hpp">
+      <Filter>constants</Filter>
+    </ClInclude>
+    <ClInclude Include="messenger_constants.hpp">
+      <Filter>constants</Filter>
+    </ClInclude>
+    <ClInclude Include="game_constants.hpp">
+      <Filter>constants</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

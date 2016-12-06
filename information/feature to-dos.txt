@@ -1,0 +1,27 @@
+
+to-do features:
+
+- maybe guild alliances
+
+- maybe guild bbs
+
+- to-do maybe implement rings
+
+- to-do maybe implement marriage
+
+- to-do maybe implement skillbooks
+
+- ping/pong functionality? maybe needs to be implemented
+
+- party quests
+
+* carnival pq
+
+* ludibrium pq
+
+* kerning pq
+
+* and maybe others
+
+* autoban for obvious stuff like very high damage, better warning system
+

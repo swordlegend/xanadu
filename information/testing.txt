@@ -1,0 +1,26 @@
+
+need intensive testing at some development milestone
+
+some stuff that is important:
+
+* login:
+
+starting
+world choosing
+channel choosing
+character creation
+character deletion
+character login
+
+* skills
+
+* hired merchants
+
+* scrolling
+
+* chatting
+
+* channel changing
+
+* 2 players in a map
+

@@ -1,0 +1,115 @@
+
+buglist
+
+-------------------- critical/blocking bugs --------------------
+
+-
+
+-------------------- map and map life stuff (mobs, reactors, portals) --------------------
+
+- fix monster spawn rate (make use of mobRate info from maps) and check the correct timer seconds
+
+- fix reactors (need reactor objects system in maps, the map reactor data is already done)
+
+- drops (from mobs or from player) fly a bit weird when spawned
+
+- meso drops missing, non-optimal workaround in place at the moment
+
+- fix party exp (Mob::give_exp function at the bottom, check the formula)
+
+- to-do prevent loading or displaying of maple tv's and turkey mobs
+
+- to-do time-mobs (mobs/bosses that spawn in specific maps in specific times, for example hourly spawn of orange mushroom in it's map)
+
+- fix other players dont see damage taken from character
+
+- fix other players can loot drops immidiatly when monster killed by other without being in a party
+
+- fix pet mesos/equip pickup: need to make a difference between drops by mobs (lootable by pet) and players (not lootable by pet) in the packet
+
+- to-do debuffing/monster/boss skills? statusses need to be implemented
+NOTES:
+need to work out the details of these features first
+
+-------------------- skills --------------------
+
+- fix door skill (bishop)
+
+- fix mist skills (poison mist and so on by mages)
+
+- fix pirate skills
+
+- fix other skills that do not fully work yet
+
+- fix player summontimer
+
+-------------------- npcs --------------------
+
+- fix storage npcs (use the correct id's in player.cpp in the npc function)
+
+- to-do npc interactions? maybe needs to be coded
+
+-------------------- hired merchants --------------------
+
+- to-do fix hired merchant when store owner enters merchant for maintenance, it needs to be shown in the map on the merchant
+
+- to-do fix hired merchant when disconnecting while setting up a hired merchant, the items in it are lost
+
+- to-do fix hired merchant when owner of store takes out item it doesnt get back into inventory
+
+- to-do fix when closing hired merchant, items are stored, but it seems that amount of items stays at 1, so if multiple items were put it, some are lost
+
+-------------------- bugs --------------------
+
+- to-do fix cash shop inventory 
+
+- to-do fix pet food
+
+- to-do fix pet fullness
+
+- to-do fix the monster carnival and energy send headers
+
+- to-do fix target character doesn't get buddy invite after logging in if someone sent buddy request while he was offline
+
+- to-do fix sender character doesn't get notification if the target declined the buddy invite (not sure if this is a bug)
+
+- to-do fix buddy's don't get the info that player changed channel
+
+- to-do fix when buddy is deleted, the buddy still see's the deleter as online (not sure if this is a bug)
+
+- to-do fix when trying to fame/defame someone within the blocked time, it says try again later instead of the correct message (not sure if this is a bug)
+
+- to-do fix when trade invite is declined, the inviter gets no notification about that (not sure if this is a bug)
+
+- to-do fix when party invite is declined, the inviter gets no notification about that (not sure if this is a bug)
+
+- to-do fix inventory item merging and sorting, make it properly work (at the moment it's only item sorting)
+
+- to-do fix handle_pet_command in pet_handler
+ 
+- to-do fix handle_pet_chat in pet_handler
+ 
+- to-do fix handle_pet_loot in pet_handler
+
+-------------------- other --------------------
+
+- to-do maybe change guild data loading and saving (right now its loaded at server startup from mysql, then kept in ram, then saved to mysql but only when doing a proper shutdown)
+
+- to-do maybe use multiple worker threads for asynchronous operations (requires code to be correct for multithreading, for example by using locks and atoms and designing it that way)
+
+- to-do maybe set cash items to max one item per slot (not sure if that has to be that way)
+
+- to-do re-write logger (probably based on C++ stream functionality) and use it in exceptions
+
+- to-do maybe make acceptor asynchronous
+
+- to-do apply design rules like function naming convention
+
+- to-do make correct use of const and reference usage and passing
+
+- make sure guild master cannot delete his character (need check at character deletion)? or atleast prevent guild messing up due to that
+
+- INFO: look up odinms based repacks how they load info from wz xmls which are simply extracts from .wz files, this will help to make proper use of .wz files
+
+- to-do check and improve .wz loading code also by consulting odinms based repacks on how they did it
+
